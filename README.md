@@ -4,6 +4,7 @@ virtual memory to the user by masking the need for reading pages from the disk f
 
 ## Goal :- 
 This project focuses on efficient way of implementing LRU and FIFO cache which outlines the supporting reasons for my way of implementation.<br />
+Two methods of implementation which is using arrays and using linkedlists are compared with each other in terms of optimality and correctedness.<br />
  
 ## My implementation with reasons :- 
 **FIFO** :- For FIFO, I have used Queue implementation but with the helps of array of frames as fixed size .Here initially in array all values are set to be -1 indicating all these values are empty.Where every line of a file address is converted to long and sent to cache. If they are not present in the cache, then they are added from starting of an array . Like Queue elements are added at back of filled slots.Now whenever there is a page fault deletion happens at First of the queue , but here in my 
